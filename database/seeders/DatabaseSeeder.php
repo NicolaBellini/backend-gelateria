@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
 
             // flavoursTableSeeder::class
-            TypesTableSeeder::class,
+            // TypesTableSeeder::class,
+            iceCreamsTabelSeeder::class,
 
         ]);
     }
