@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 // use Database\Seeders\ProjectsSeeder;
 use Database\Seeders\flavoursTableSeeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -14,17 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
         $this->call([
-            // [ProjectsSeeder::class,
-            // typeTableSeeder::class,
-            // technologyTableSeeder::class,
-            flavoursTableSeeder::class
+
+            // flavoursTableSeeder::class
+            TypesTableSeeder::class,
+
         ]);
     }
 }
